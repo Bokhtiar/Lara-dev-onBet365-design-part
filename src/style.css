@@ -18205,11 +18205,11 @@ table {
     background: #fff url(../images/preloader.gif) no-repeat center center
 }
 
-.onBetNav .nav-lock-scroll {
+.fsoftnavbar .nav-lock-scroll {
     overflow: hidden
 }
 
-.onBetNav .nav {
+.fsoftnavbar .nav {
     display: none;
     position: fixed;
     top: 0;
@@ -18221,7 +18221,7 @@ table {
     overflow-y: auto
 }
 
-.onBetNav .nav ul {
+.fsoftnavbar .nav ul {
     display: block;
     position: relative;
     zoom: 1;
@@ -18230,37 +18230,37 @@ table {
     padding: 0
 }
 
-.onBetNav .nav a,
-.onBetNav .nav a:active,
-.onBetNav .nav a:hover,
-.onBetNav .nav a:visited {
+.fsoftnavbar .nav a,
+.fsoftnavbar .nav a:active,
+.fsoftnavbar .nav a:hover,
+.fsoftnavbar .nav a:visited {
     display: block;
     position: relative
 }
 
 @media only screen and (min-width:960px) {
-    .onBetNav .nav {
+    .fsoftnavbar .nav {
         display: block;
         position: relative;
         bottom: auto;
         overflow: visible
     }
 
-    .onBetNav .nav li {
+    .fsoftnavbar .nav li {
         position: relative;
         white-space: nowrap
     }
 
-    .onBetNav .nav>ul>li {
+    .fsoftnavbar .nav>ul>li {
         display: inline-block;
         padding: 18px 0
     }
 
-    .onBetNav .nav ul {
+    .fsoftnavbar .nav ul {
         display: block
     }
 
-    .onBetNav .nav ul ul {
+    .fsoftnavbar .nav ul ul {
         display: none;
         position: absolute;
         top: 100%;
@@ -18268,21 +18268,21 @@ table {
         z-index: 901
     }
 
-    .onBetNav .nav ul ul ul {
+    .fsoftnavbar .nav ul ul ul {
         top: 5px;
         left: 95%;
         z-index: 902
     }
 
-    .onBetNav .nav ul ul ul ul {
+    .fsoftnavbar .nav ul ul ul ul {
         z-index: 903
     }
 
-    .onBetNav .nav ul ul ul ul ul {
+    .fsoftnavbar .nav ul ul ul ul ul {
         z-index: 904
     }
 
-    .onBetNav .nav ul ul li.nav-left>ul {
+    .fsoftnavbar .nav ul ul li.nav-left>ul {
         left: auto;
         right: 95%
     }
@@ -18359,7 +18359,7 @@ header h1:before {
     content: "\E007"
 }
 
-.onBetNav header {
+.fsoftnavbar header {
     display: block;
     position: fixed;
     top: 0;
@@ -18372,15 +18372,15 @@ header h1:before {
     color: #fff
 }
 
-.onBetNav header h1 {
+.fsoftnavbar header h1 {
     margin: 0;
     font-size: 1.7rem;
     line-height: 4.4rem;
     color: #fff
 }
 
-.onBetNav .nav-button,
-.onBetNav .nav-close {
+.fsoftnavbar .nav-button,
+.fsoftnavbar .nav-close {
     position: fixed;
     top: 0;
     width: 2.4rem;
@@ -18394,86 +18394,86 @@ header h1:before {
     color: #a69a94
 }
 
-.onBetNav .nav-button:before,
-.onBetNav .nav-close:before {
+.fsoftnavbar .nav-button:before,
+.fsoftnavbar .nav-close:before {
     display: block;
     text-align: center
 }
 
-.onBetNav .nav-button {
+.fsoftnavbar .nav-button {
     display: block;
     right: 1rem;
     font-size: 1.7rem
 }
 
-.onBetNav .nav-button:before {
+.fsoftnavbar .nav-button:before {
     content: "\E003"
 }
 
-.onBetNav .nav-close {
+.fsoftnavbar .nav-close {
     display: none;
     right: 4rem;
     font-size: 1.9rem
 }
 
-.onBetNav .nav-close:before {
+.fsoftnavbar .nav-close:before {
     content: "\E002"
 }
 
-.onBetNav .nav {
+.fsoftnavbar .nav {
     padding-top: 4.4rem;
     line-height: 4.4rem;
     background: #000040;
     color: #a69a94
 }
 
-.onBetNav .nav ul {
+.fsoftnavbar .nav ul {
     border-radius: 0 0 6px 6px
 }
 
-.onBetNav .nav ul ul {
+.fsoftnavbar .nav ul ul {
     background: #000040
 }
 
-.onBetNav .nav ul ul ul {
+.fsoftnavbar .nav ul ul ul {
     background: #000040
 }
 
-.onBetNav .nav ul ul ul ul {
+.fsoftnavbar .nav ul ul ul ul {
     background: #000040
 }
 
-.onBetNav .nav ul ul ul ul ul {
+.fsoftnavbar .nav ul ul ul ul ul {
     background: #000040
 }
 
-.onBetNav .nav li {
+.fsoftnavbar .nav li {
     border-top: 1px solid #59544f;
     cursor: pointer
 }
 
-.onBetNav .nav li.nav-active>a,
-.onBetNav .nav li:hover>a {
+.fsoftnavbar .nav li.nav-active>a,
+.fsoftnavbar .nav li:hover>a {
     color: #ff3952
 }
 
-.onBetNav .nav .nav-submenu>ul {
+.fsoftnavbar .nav .nav-submenu>ul {
     margin-left: 20px
 }
 
-.onBetNav .nav .nav-submenu>a {
+.fsoftnavbar .nav .nav-submenu>a {
     padding-right: 30px !important
 }
 
-.onBetNav .nav a,
-.onBetNav .nav a:hover {
+.fsoftnavbar .nav a,
+.fsoftnavbar .nav a:hover {
     border-radius: 6px;
     padding: 0 3px 1px;
     text-decoration: none;
     color: #fff
 }
 
-.onBetNav .nav .nav-submenu>a:after {
+.fsoftnavbar .nav .nav-submenu>a:after {
     position: absolute;
     display: block;
     right: 10px;
@@ -18482,65 +18482,65 @@ header h1:before {
 }
 
 @media only screen and (min-width:960px) {
-    .onBetNav header {
+    .fsoftnavbar header {
         position: relative;
         display: none
     }
 
-    .onBetNav .nav-button {
+    .fsoftnavbar .nav-button {
         display: none
     }
 
-    .onBetNav .nav {
+    .fsoftnavbar .nav {
         padding: 0 !important
     }
 
-    .onBetNav .nav>ul>li {
+    .fsoftnavbar .nav>ul>li {
         border-top: none;
         font-size: 18px
     }
 
-    .onBetNav .nav li>ul {
+    .fsoftnavbar .nav li>ul {
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75);
         top: 80px
     }
 
-    .onBetNav .nav li>ul>li:first-child {
+    .fsoftnavbar .nav li>ul>li:first-child {
         border: none
     }
 
-    .onBetNav .nav li>ul li a {
+    .fsoftnavbar .nav li>ul li a {
         font-size: 16px
     }
 
-    .onBetNav .nav ul ul ul {
+    .fsoftnavbar .nav ul ul ul {
         border-radius: 0 6px 6px 6px
     }
 
-    .onBetNav .nav ul ul ul li:first-child {
+    .fsoftnavbar .nav ul ul ul li:first-child {
         border-top: none
     }
 
-    .onBetNav .nav .nav-left>ul {
+    .fsoftnavbar .nav .nav-left>ul {
         border-radius: 6px 0 6px 6px
     }
 
-    .onBetNav .nav .nav-submenu li {
+    .fsoftnavbar .nav .nav-submenu li {
         min-width: 120px;
         padding: 5px
     }
 
-    .onBetNav .nav .nav-submenu>ul {
+    .fsoftnavbar .nav .nav-submenu>ul {
         margin: 0;
         text-align: left;
         margin-left: 5px
     }
 
-    .onBetNav .nav>ul>.nav-submenu>a:after {
+    .fsoftnavbar .nav>ul>.nav-submenu>a:after {
         content: "\E005"
     }
 
-    .onBetNav .nav .nav-submenu>a:after {
+    .fsoftnavbar .nav .nav-submenu>a:after {
         content: "\E006"
     }
 }
@@ -20875,7 +20875,8 @@ span.is-active:after {
 
 .footer-top {
     padding-top: 20px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    background-color: var(--second-color);
 }
 
 .widget-about .address-list {
@@ -20983,6 +20984,7 @@ span.is-active:after {
 }
 
 .footer-bottom {
+    background-color: var(--second-color);
     padding: 20px 0;
     background-color: rgba(0, 0, 0, .2)
 }
@@ -21994,11 +21996,11 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 10px
     }
 
-    .onBetNav .nav {
+    .fsoftnavbar .nav {
         height: 400px
     }
 
-    .onBetNav .nav li {
+    .fsoftnavbar .nav li {
         padding-left: 15px
     }
 
