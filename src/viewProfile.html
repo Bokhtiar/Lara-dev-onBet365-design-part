@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="SKAnfJJyw1XWyPujLGfJ0OGwWAkCCOwfCzgjI6q4" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.jpg" />
+    <title>Freshosoft</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://onbet365.in/css/datatable.css">
+
+    <!--fontawosome version 4 useing-->
+    <script src="https://kit.fontawesome.com/ba78558982.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        @media (max-width: 575px) {
+            .matchTournamentLiveWrap {
+                margin: 0;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div id="preloader"></div>
+
+    <!--  header-section start  -->
+    <header class="header-section">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <a class="site-logo site-title mt-md-4" href="index.html">
+                            <img class="" src="./images/logo.png" alt="freshosoft" />
+                        </a>
+                    </div>
+                    <div class="fsoftnavbar  col-lg-5 ">
+
+                        <header>
+                            <a class="site-logo site-title mt-md-4" href="index.html">
+                                <img class="" src="./images/logo.png" alt="freshosoft" />
+                            </a>
+                        </header>
+                        <a href="#" class="nav-button">Menu</a>
+                        <nav class="nav mt-2 text-lg-right">
+                            <ul class="navbar-nav">
+                                <li><a id="homeMenu" href="index.html">Home</a></li>
+                                <li><a id="advanceMenu" href="dashboard.html">Advance Bet</a></li>
+                                <li class="nav-submenu"><a id="myAccount" href="#">My Account</a>
+                                    <ul>
+                                        <li><a href="https://onbet365.in/view/profile">View Profile</a></li>
+                                        <li><a href="https://onbet365.in/change/club">Change Club</a></li>
+                                        <li><a href="https://onbet365.in/my/follower">My follower</a></li>
+                                        <li><a href="https://onbet365.in/change/password">Change Password</a></li>
+                                        <li><a href="https://onbet365.in/get/sponsor">Sponsor</a></li>
+                                        <li><a href="https://onbet365.in/bet/history">Bet History</a></li>
+                                        <li><a href="https://onbet365.in/user/complain"><span
+                                                    class="badge badge-warning">Complain Box</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-submenu"><a id="myWallet" href="#">My Wallet</a>
+                                    <ul>
+                                        <li><a href="https://onbet365.in/make/deposit">Make Deposit</a></li>
+                                        <li><a href="https://onbet365.in/deposit/history">Deposit history</a></li>
+                                        <li><a href="https://onbet365.in/coin/transfer">Coin Transfer</a></li>
+                                        <li><a href="https://onbet365.in/coin/transfer/history">Coin Transfer
+                                                History</a></li>
+                                        <li><a href="https://onbet365.in/coin/receive/history">Coin Receive History</a>
+                                        </li>
+                                        <li><a href="https://onbet365.in/my/withdraw">Withdraw</a></li>
+                                        <li><a href="https://onbet365.in/my/withdraw/history">Withdraw History</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <a href="#" class="nav-close">Close Menu</a>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="row mt-3">
+                            <div class="col-md-7 offset-md-1 col-8">
+                                <div class="bg-success rounded">
+                                    <b class="text-white p-2" style="font-size: 13px;text-transform: capitalize;">
+                                        Welcome, abcde <a href="https://onbet365.in/user/registration"></a><br />
+                                        <img src="https://onbet365.in/images/coin.png" alt="coins" width="20">
+                                        <span style="font-size:12px;" id="userNewBalance">4641.76</span>
+                                        <button style="border-radius: 2px;padding:0px 6px 0px 2px"
+                                            class="text-dark bg-danger" id="refreshBalance"> &nbsp;<i
+                                                class="fa fa-refresh"></i></button>
+                                        <a style="border-radius: 2px;padding:0px 5px;" class="text-dark bg-warning"
+                                            href="https://onbet365.in/make/deposit">Deposit</a>
+                                    </b>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-4">
+                                <form action="https://onbet365.in/user/logout" method="POST">
+                                    <input type="hidden" name="_token" value="4yzsfedo6vpn6fLYqftGk0ErGTpiGeV9Es7TYpfT">
+                                    <button type="submit" class="btn btn-md btn-warning mt-md-1 mt-1 p-2"> Logout
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- header-bottom end -->
+    </header>
+    <!--  header-section end  -->
+
+
+    <!--main section profile start-->
+    <!-- Menu -->
+
+    <!-- Main Content -->
+
+    <!-- breadcrumb Start -->
+    <section class="breadcrumbs-custom-wrap">
+        <h1 class="text-center">
+            <ul class="breadcroumbLink">
+                <li><a href="index.html">Home</a></li>
+                <li><a>/ view profile</a></li>
+            </ul>
+        </h1>
+    </section>
+
+    <section class="login-section" style="padding:20px 0px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="login-block text-center">
+                        <div style="padding:0px 20px;">
+                            <h3 class="title">My Profile </h3>
+                            <div class="customProfile">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Username</td>
+                                            <td> Abcde </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Club</td>
+                                            <td> Club24 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sponsor</td>
+                                            <td>
+                                                Club24
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                    data-cfemail="3657545552535376515b575f5a1855595b">[email&#160;protected]</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phone</td>
+                                            <td>01234567891</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Join Date</td>
+                                            <td>
+                                                27 Mar 2021 05:48:59 PM </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Status</td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a class="btn btn-md btn-primary" href="https://onbet365.in/edit/profile">Edit
+                                    Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Content -->
+
+    <!--main section profile end-->
+
+    <!-- footer-section start -->
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-widget widget-about">
+                            <div class="text-center mb-2">
+                                <!-- <a class="logo">
+                                    <img class="rounded" src="https://onbet365.in/images/eighteen.jpg" alt="onbet365">
+                                </a> -->
+                            </div>
+                            <p>Please Gamble Responsibly <a class="font-size-12 text-primary"
+                                    href="http://responsiblegambling.betfair.com/">More details</a></p>
+
+                            <p class="">
+                                <a class="btn btn-sm btn-primary mb-2 mt-2">Scores & Results</a>
+                                <a class="btn btn-sm btn-success mb-2 mt-2">Live Scores</a>
+                                <a class="btn btn-sm btn-secondary mb-2 mt-2">Results Open</a>
+                                <a class="btn btn-sm btn-warning mb-2 mt-2">Account Offer</a>
+                                <a class="btn btn-sm btn-danger mb-2 mt-2">Account Offer</a>
+                                <a class="btn btn-sm btn-dark mb-2 mt-2">Current Offers</a>
+                                <a class="btn btn-sm btn-success mb-2 mt-2">Deposit Offers</a>
+                            </p>
+
+
+                            <ul class="social-links d-flex">
+                                <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                                <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget widget-menu">
+                            <h3 class="widget-title">Help</h3>
+                            <ul class="menu-links">
+                                <li><a href="">Deposits</a></li>
+                                <li><a href="">Rules</a></li>
+                                <li><a href="">Withdrawals</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Technical Issues</a></li>
+                                <li><a href="">Complaints Procedure</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">freshosoft FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="footer-widget widget-subscribe">
+                            <h3 class="widget-title">Subscribe</h3>
+                            <div class="widget-subscribe-body">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/google_play_logo.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/gambleaware.jpg" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/Neteller.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/paypal.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/Skrill.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/visa.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/internetcasinosites.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/protected.jpg" alt="freshosoft">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer-top end -->
+        <div class="footer-bottom text-center" style="background-color: #000040;">
+            <div class="container">
+                <p>&copy 2022 <i>All Rights. - Created by <a href="#">Freshosoft</a></i></p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-section end -->
+    <hr>
+    <!-- scroll-to-top start -->
+    <div class="scroll-to-top">
+        <span class="scroll-icon">
+            <i class="fa fa-angle-up"></i>
+        </span>
+    </div>
+    <!-- scroll-to-top end -->
+    <!-- footer top and bottom -->
+
+    <!-- Script -->
+    <script src="./js/homepage.js"> </script>
+
+    <script src="https://onbet365.in/js/app.js"></script>
+    <script src="https://onbet365.in/js/frontcheck.js"></script>
+
+    <!-- Script -->
+</body>
+
+</html>

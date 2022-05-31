@@ -15,6 +15,7 @@
     <!--fontawosome version 4 useing-->
     <script src="https://kit.fontawesome.com/ba78558982.js" crossorigin="anonymous"></script>
 
+
     <style>
         @media (max-width: 575px) {
             .matchTournamentLiveWrap {
@@ -52,32 +53,52 @@
                         <nav class="nav mt-2 text-lg-right">
                             <ul class="navbar-nav">
                                 <li><a id="homeMenu" href="index.html">Home</a></li>
-                                <li><a id="advanceMenu" href="#">Advance Bet</a></li>
-                                <li class="joinNewUserSingle"><a id="userRegistration" href="#">Join Now</a></li>
+                                <li><a id="advanceMenu" href="dashboard.html">Advance Bet</a></li>
+                                <li class="nav-submenu"><a id="myAccount" href="#">My Account</a>
+                                    <ul>
+                                        <li><a href="https://onbet365.in/view/profile">View Profile</a></li>
+                                        <li><a href="https://onbet365.in/change/club">Change Club</a></li>
+                                        <li><a href="https://onbet365.in/my/follower">My follower</a></li>
+                                        <li><a href="https://onbet365.in/change/password">Change Password</a></li>
+                                        <li><a href="https://onbet365.in/get/sponsor">Sponsor</a></li>
+                                        <li><a href="https://onbet365.in/bet/history">Bet History</a></li>
+                                        <li><a href="https://onbet365.in/user/complain"><span class="badge badge-warning">Complain Box</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-submenu"><a id="myWallet" href="#">My Wallet</a>
+                                    <ul>
+                                        <li><a href="https://onbet365.in/make/deposit">Make Deposit</a></li>
+                                        <li><a href="https://onbet365.in/deposit/history">Deposit history</a></li>
+                                        <li><a href="https://onbet365.in/coin/transfer">Coin Transfer</a></li>
+                                        <li><a href="https://onbet365.in/coin/transfer/history">Coin Transfer History</a></li>
+                                        <li><a href="https://onbet365.in/coin/receive/history">Coin Receive History</a></li>
+                                        <li><a href="https://onbet365.in/my/withdraw">Withdraw</a></li>
+                                        <li><a href="https://onbet365.in/my/withdraw/history">Withdraw History</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
 
                         <a href="#" class="nav-close">Close Menu</a>
 
                     </div>
-                    <div class="col-md-1">
-                        <a class="btn btn-danger joinNewUser" href="#">Join now</a>
-                    </div>
                     <div class="col-lg-4 col-sm-12">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="frontendCustomLogin">
-                                    <form action="" method="POST">
-                                        <input type="hidden" name="" value=""> <input type="text" name="username"
-                                            placeholder="Username" value="" required />
-                                        <label>
-                                            <input type="password" name="password" placeholder="Password" required
-                                                autocomplete="off" />
-                                        </label>
-                                        <input class="cusLogIn" type="submit" value="Log In" />
-                                        <a href="#" class="btn btn-sm btn-danger mobileCusJoin">Join Now</a>
-                                    </form>
+                        <div class="row mt-3">
+                            <div class="col-md-7 offset-md-1 col-8">
+                                <div class="bg-success rounded mb-3">
+                                    <b class="text-white p-2" style="font-size: 13px;text-transform: capitalize;">
+                                        Welcome, abcde <a href="https://onbet365.in/user/registration"></a><br/>
+                                        <img src="https://onbet365.in/images/coin.png" alt="coins" width="20">
+                                        <span style="font-size:12px;" id="userNewBalance">4641.76</span>
+                                            <button style="border-radius: 2px;padding:0px 6px 0px 2px" class="text-dark bg-danger" id="refreshBalance" > &nbsp;<i class="fa fa-refresh"></i></button>
+                                        <a style="border-radius: 2px;padding:0px 5px;" class="text-dark bg-warning" href="https://onbet365.in/make/deposit">Deposit</a>
+                                    </b>
                                 </div>
+                            </div>
+                            <div class="col-md-3 col-4">
+                                <form action="https://onbet365.in/user/logout" method="POST">
+                                    <input type="hidden" name="_token" value="4yzsfedo6vpn6fLYqftGk0ErGTpiGeV9Es7TYpfT">                                        <button type="submit" class="btn btn-md btn-warning mt-md-1 mt-1 p-2"> Logout </button>
+                                </form>
                             </div>
                         </div>
                     </div>
