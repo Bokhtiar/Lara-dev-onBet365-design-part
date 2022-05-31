@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="SKAnfJJyw1XWyPujLGfJ0OGwWAkCCOwfCzgjI6q4" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.jpg" />
+    <title>Freshosoft</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://onbet365.in/css/datatable.css">
+
+    <!--fontawosome version 4 useing-->
+    <script src="https://kit.fontawesome.com/ba78558982.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        @media (max-width: 575px) {
+            .matchTournamentLiveWrap {
+                margin: 0;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div id="preloader"></div>
+
+    <!--  header-section start  -->
+    <header class="header-section">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <a class="site-logo site-title mt-md-4" href="index.html">
+                            <img class="" src="./images/logo.png" alt="freshosoft" />
+                        </a>
+                    </div>
+                    <div class="fsoftnavbar  col-lg-5 ">
+
+                        <header>
+                            <a class="site-logo site-title mt-md-4" href="index.html">
+                                <img class="" src="./images/logo.png" alt="freshosoft" />
+                            </a>
+                        </header>
+                        <a href="#" class="nav-button">Menu</a>
+                        <nav class="nav mt-2 text-lg-right">
+                            <ul class="navbar-nav">
+                                <li><a id="homeMenu" href="index.html">Home</a></li>
+                                <li><a id="advanceMenu" href="dashboard.html">Advance Bet</a></li>
+                                <li class="nav-submenu"><a id="myAccount" href="#">My Account</a>
+                                    <ul>
+                                        <li><a href="https://onbet365.in/view/profile">View Profile</a></li>
+                                        <li><a href="https://onbet365.in/change/club">Change Club</a></li>
+                                        <li><a href="https://onbet365.in/my/follower">My follower</a></li>
+                                        <li><a href="https://onbet365.in/change/password">Change Password</a></li>
+                                        <li><a href="https://onbet365.in/get/sponsor">Sponsor</a></li>
+                                        <li><a href="https://onbet365.in/bet/history">Bet History</a></li>
+                                        <li><a href="https://onbet365.in/user/complain"><span
+                                                    class="badge badge-warning">Complain Box</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-submenu"><a id="myWallet" href="#">My Wallet</a>
+                                    <ul>
+                                        <li><a href="https://onbet365.in/make/deposit">Make Deposit</a></li>
+                                        <li><a href="https://onbet365.in/deposit/history">Deposit history</a></li>
+                                        <li><a href="https://onbet365.in/coin/transfer">Coin Transfer</a></li>
+                                        <li><a href="https://onbet365.in/coin/transfer/history">Coin Transfer
+                                                History</a></li>
+                                        <li><a href="https://onbet365.in/coin/receive/history">Coin Receive History</a>
+                                        </li>
+                                        <li><a href="https://onbet365.in/my/withdraw">Withdraw</a></li>
+                                        <li><a href="https://onbet365.in/my/withdraw/history">Withdraw History</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <a href="#" class="nav-close">Close Menu</a>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="row mt-3">
+                            <div class="col-md-7 offset-md-1 col-8">
+                                <div class="bg-success rounded">
+                                    <b class="text-white p-2" style="font-size: 13px;text-transform: capitalize;">
+                                        Welcome, abcde <a href="https://onbet365.in/user/registration"></a><br />
+                                        <img src="https://onbet365.in/images/coin.png" alt="coins" width="20">
+                                        <span style="font-size:12px;" id="userNewBalance">4641.76</span>
+                                        <button style="border-radius: 2px;padding:0px 6px 0px 2px"
+                                            class="text-dark bg-danger" id="refreshBalance"> &nbsp;<i
+                                                class="fa fa-refresh"></i></button>
+                                        <a style="border-radius: 2px;padding:0px 5px;" class="text-dark bg-warning"
+                                            href="https://onbet365.in/make/deposit">Deposit</a>
+                                    </b>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-4">
+                                <form action="https://onbet365.in/user/logout" method="POST">
+                                    <input type="hidden" name="_token" value="4yzsfedo6vpn6fLYqftGk0ErGTpiGeV9Es7TYpfT">
+                                    <button type="submit" class="btn btn-md btn-warning mt-md-1 mt-1 p-2"> Logout
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- header-bottom end -->
+    </header>
+    <!--  header-section end  -->
+
+
+    <!--main section profile start-->
+    <!-- Menu -->
+
+    <!-- Main Content -->
+
+    <!-- breadcrumb Start -->
+    <section class="breadcrumbs-custom-wrap">
+        <h1 class="text-center">
+            <ul class="breadcroumbLink">
+                <li><a href="index.html">Home</a></li>
+                <li><a>/ My follower</a></li>
+            </ul>
+        </h1>
+    </section>
+
+    <section class="login-section" style="padding:20px 0px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="login-block text-center">
+                        <div style="padding:0px 20px;">
+                            <h3 class="title">My follower</h3>
+
+                            <div class="customProfile">
+                                <table id="example"
+                                    class="table table-sm table-striped table-bordered table-responsive-lg table-responsive-md table-responsive-sm "
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Sl</th>
+                                            <th>Username</th>
+                                            <th>Phone</th>
+                                            <th>Join Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>mandana99</td>
+                                            <td>01851678458</td>
+                                            <td>
+                                                24 Apr 2022 04:04:42 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>lovely</td>
+                                            <td>017415252142</td>
+                                            <td>
+                                                10 Apr 2022 11:41:25 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>kamrul22</td>
+                                            <td>01724709846</td>
+                                            <td>
+                                                24 Mar 2022 12:49:39 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>sohidul22</td>
+                                            <td>01753921913</td>
+                                            <td>
+                                                24 Mar 2022 11:34:20 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>shagor22</td>
+                                            <td>01742152412</td>
+                                            <td>
+                                                18 Mar 2022 02:23:53 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>xyz24</td>
+                                            <td>01711111111</td>
+                                            <td>
+                                                24 Dec 2021 09:19:53 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>coinbank</td>
+                                            <td>01758569856</td>
+                                            <td>
+                                                14 Dec 2021 11:01:50 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>rahat24</td>
+                                            <td>01458587878</td>
+                                            <td>
+                                                01 Dec 2021 12:22:00 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>bet2021</td>
+                                            <td>01648513712</td>
+                                            <td>
+                                                04 Nov 2021 04:49:48 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>shahjamal2021</td>
+                                            <td>01787503113</td>
+                                            <td>
+                                                22 Oct 2021 02:15:40 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>nizam190</td>
+                                            <td>01726176691</td>
+                                            <td>
+                                                06 Oct 2021 06:19:39 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>roton206</td>
+                                            <td>01892715010</td>
+                                            <td>
+                                                01 Oct 2021 10:26:37 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>saidur02</td>
+                                            <td>01762975314</td>
+                                            <td>
+                                                28 Sep 2021 12:50:01 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>saiful2021</td>
+                                            <td>01628423729</td>
+                                            <td>
+                                                25 Sep 2021 06:34:06 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>akb</td>
+                                            <td>01723562563</td>
+                                            <td>
+                                                22 Sep 2021 08:15:49 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>login21</td>
+                                            <td>01725323652</td>
+                                            <td>
+                                                22 Sep 2021 08:09:15 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>heemel365</td>
+                                            <td>01968027825</td>
+                                            <td>
+                                                21 Sep 2021 02:30:11 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>joy24</td>
+                                            <td>01712358586</td>
+                                            <td>
+                                                06 Aug 2021 07:27:38 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>joyking</td>
+                                            <td>01712345678</td>
+                                            <td>
+                                                06 Aug 2021 07:11:15 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>joy-king</td>
+                                            <td>01912584548</td>
+                                            <td>
+                                                06 Aug 2021 06:56:02 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>mrs365</td>
+                                            <td>01723685227</td>
+                                            <td>
+                                                29 Jul 2021 05:55:28 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>yeasin9973</td>
+                                            <td>01982739973</td>
+                                            <td>
+                                                14 Jul 2021 03:10:34 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>bossboss365</td>
+                                            <td>01917945125</td>
+                                            <td>
+                                                14 Jul 2021 03:10:23 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>ornob365</td>
+                                            <td>01775865802</td>
+                                            <td>
+                                                10 Jul 2021 09:48:05 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>tanvir999</td>
+                                            <td>01913973227</td>
+                                            <td>
+                                                17 Jun 2021 09:23:40 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>alif2022</td>
+                                            <td>01407781144</td>
+                                            <td>
+                                                11 Jun 2021 10:42:01 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>27</td>
+                                            <td>don365</td>
+                                            <td>01759017568</td>
+                                            <td>
+                                                06 Jun 2021 12:19:34 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>28</td>
+                                            <td>milondhunat</td>
+                                            <td>01712793209</td>
+                                            <td>
+                                                06 Jun 2021 06:34:22 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>mdhr27</td>
+                                            <td>01749123021</td>
+                                            <td>
+                                                06 Jun 2021 05:43:54 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>talukdar365</td>
+                                            <td>01630136604</td>
+                                            <td>
+                                                06 Jun 2021 05:09:34 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>31</td>
+                                            <td>boss</td>
+                                            <td>01724628221</td>
+                                            <td>
+                                                05 Jun 2021 12:56:55 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>32</td>
+                                            <td>shah222</td>
+                                            <td>01712345674</td>
+                                            <td>
+                                                05 Jun 2021 04:08:58 AM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>33</td>
+                                            <td>rana-2021</td>
+                                            <td>01873048327</td>
+                                            <td>
+                                                04 May 2021 12:33:55 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>34</td>
+                                            <td>efghi</td>
+                                            <td>01731418798</td>
+                                            <td>
+                                                02 May 2021 03:54:43 PM </td>
+                                            <td>
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Content -->
+
+
+    <!-- Main Content -->
+
+    <!--main section profile end-->
+
+    <!-- footer-section start -->
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-widget widget-about">
+                            <div class="text-center mb-2">
+                                <!-- <a class="logo">
+                                    <img class="rounded" src="https://onbet365.in/images/eighteen.jpg" alt="onbet365">
+                                </a> -->
+                            </div>
+                            <p>Please Gamble Responsibly <a class="font-size-12 text-primary"
+                                    href="http://responsiblegambling.betfair.com/">More details</a></p>
+
+                            <p class="">
+                                <a class="btn btn-sm btn-primary mb-2 mt-2">Scores & Results</a>
+                                <a class="btn btn-sm btn-success mb-2 mt-2">Live Scores</a>
+                                <a class="btn btn-sm btn-secondary mb-2 mt-2">Results Open</a>
+                                <a class="btn btn-sm btn-warning mb-2 mt-2">Account Offer</a>
+                                <a class="btn btn-sm btn-danger mb-2 mt-2">Account Offer</a>
+                                <a class="btn btn-sm btn-dark mb-2 mt-2">Current Offers</a>
+                                <a class="btn btn-sm btn-success mb-2 mt-2">Deposit Offers</a>
+                            </p>
+
+
+                            <ul class="social-links d-flex">
+                                <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                                <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget widget-menu">
+                            <h3 class="widget-title">Help</h3>
+                            <ul class="menu-links">
+                                <li><a href="">Deposits</a></li>
+                                <li><a href="">Rules</a></li>
+                                <li><a href="">Withdrawals</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Technical Issues</a></li>
+                                <li><a href="">Complaints Procedure</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">freshosoft FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="footer-widget widget-subscribe">
+                            <h3 class="widget-title">Subscribe</h3>
+                            <div class="widget-subscribe-body">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/google_play_logo.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/gambleaware.jpg" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/Neteller.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/paypal.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/Skrill.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/visa.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/internetcasinosites.png" alt="freshosoft">
+                                <img style="margin-right: 26px; margin-bottom: 15px;"
+                                    src="https://onbet365.in/images/protected.jpg" alt="freshosoft">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer-top end -->
+        <div class="footer-bottom text-center" style="background-color: #000040;">
+            <div class="container">
+                <p>&copy 2022 <i>All Rights. - Created by <a href="#">Freshosoft</a></i></p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-section end -->
+    <hr>
+    <!-- scroll-to-top start -->
+    <div class="scroll-to-top">
+        <span class="scroll-icon">
+            <i class="fa fa-angle-up"></i>
+        </span>
+    </div>
+    <!-- scroll-to-top end -->
+    <!-- footer top and bottom -->
+
+    <!-- Script -->
+    <script src="./js/homepage.js"> </script>
+
+    <script src="https://onbet365.in/js/app.js"></script>
+    <script src="https://onbet365.in/js/frontcheck.js"></script>
+
+    <!-- Script -->
+
+
+    
+<!-- scroll-to-top start -->
+<div class="scroll-to-top">
+    <span class="scroll-icon">
+      <i class="fa fa-angle-up"></i>
+    </span>
+</div>
+<!-- scroll-to-top end -->
+    <!-- footer top and bottom -->
+
+    <!-- Script -->
+        <script src="https://onbet365.in/js/frontend.js"></script>
+
+    
+    <script type="text/javascript">
+        $('#myAccount').addClass('active');
+    </script>
+    <script src="https://onbet365.in/js/datatable.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                "bInfo": false
+            });
+        } );
+    </script>
+
+    <!-- Script -->
+</body>
+
+</html>
