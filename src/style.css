@@ -5254,6 +5254,15 @@
 .card-body-bg{
     background-color: #4c4c8d;
 }
+.button-hover-bg:hover{
+    background-color: var(--second-color);
+    color:white;
+    border: 0px ;
+}
+.button-hover-bg>span{
+    color: var(--blue);
+    font-weight: bold;
+}
 
 @keyframes flipInY {
     from {
