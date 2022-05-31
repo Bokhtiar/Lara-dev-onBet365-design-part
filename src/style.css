@@ -5251,6 +5251,10 @@
     }
 }
 
+.card-body-bg{
+    background-color: #4c4c8d;
+}
+
 @keyframes flipInY {
     from {
         -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
