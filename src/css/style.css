@@ -21317,7 +21317,7 @@ span.is-active:after {
 }
 
 .breadcrumbs-custom-wrap {
-    background-image: url(./images/football.jpg);
+    background-image: url(../images/football.jpg);
     width: 100%;
     padding: 50px 0;
     background-position: center;
