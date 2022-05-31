@@ -11,7 +11,15 @@
     font-weight: 400;
     font-style: normal
 }
-
+.bg-color{
+    background-color: #31002f;
+}
+#userRegistration{
+    background-color: yellow;
+}
+.nav-submenu>ul>li{
+    background-color: #31002f;
+}
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -5252,7 +5260,7 @@
 }
 
 .card-body-bg{
-    background-color: #4c4c8d;
+    background-color: #450042;
 }
 .button-hover-bg:hover{
     background-color: var(--second-color);
@@ -5396,6 +5404,17 @@
     backface-visibility: visible !important;
     -webkit-animation-name: flipOutY;
     animation-name: flipOutY
+}
+p.lightSpeedIn{
+    background-color: #ffc107; /* Green */
+    border: none;
+    color: black;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-size: bolder;
 }
 
 @-webkit-keyframes lightSpeedIn {
@@ -8858,7 +8877,7 @@ pre code {
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #31002f;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -12092,7 +12111,7 @@ input[type=submit].btn-block {
 
 .badge-dark {
     color: #fff;
-    background-color: #343a40
+    background-color: #7500bd
 }
 
 .badge-dark[href]:focus,
@@ -17683,7 +17702,7 @@ a[class*=lightcase-icon-].lightcase-icon-play {
 
 :root {
     --main-color: #ff3952;
-    --second-color: #000040;
+    --second-color: #63035f;
     --heading-font: 'LouisGeorgeCafeBold';
     --heading-font2: 'LouisGeorgeCafe';
     --heading-color: #000040;
@@ -18381,7 +18400,7 @@ header h1:before {
     z-index: 901;
     padding-left: 10px;
     line-height: 4.4rem;
-    background: #000040;
+    background: var(--second-color);
     color: #fff
 }
 
@@ -18436,7 +18455,7 @@ header h1:before {
 .fsoftnavbar .nav {
     padding-top: 4.4rem;
     line-height: 4.4rem;
-    background: #000040;
+    background: var(--second-color);
     color: #a69a94
 }
 
@@ -18953,7 +18972,6 @@ span.is-active:after {
 }
 
 .banner-content-area {
-    padding: 50px 0 50px 0;
     position: relative;
     z-index: 9
 }
@@ -20665,7 +20683,7 @@ span.is-active:after {
 }
 
 .login-block {
-    background-color: #000040;
+    background-color: var(--second-color);
     box-shadow: 0 0 15px -1px rgba(55, 107, 255, .2);
     padding: 60px 0
 }
@@ -20706,6 +20724,9 @@ span.is-active:after {
     margin-bottom: 45px
 }
 
+input{
+    background-color: black;
+}
 .error-section {
     padding-top: 90px;
     padding-bottom: 120px
@@ -20999,7 +21020,6 @@ span.is-active:after {
 .footer-bottom {
     background-color: var(--second-color);
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, .2)
 }
 
 .footer-bottom p {
@@ -21165,7 +21185,7 @@ span.is-active:after {
 }
 
 .holder {
-    background: #0a0849;
+    background: var(--second-color);
     padding: .5rem;
     overflow: hidden
 }
@@ -21302,8 +21322,8 @@ span.is-active:after {
 
 .sidebar-frontend {
     border: 1px solid #000040;
-    background: #000040;
-    margin-top: 115px
+    background: var(--second-color);
+    margin-top: 147px
 }
 
 .sidebar-frontend button {
@@ -21322,7 +21342,7 @@ span.is-active:after {
     padding: 50px 0;
     background-position: center;
     background-size: cover;
-    margin-top: 89px
+    margin-top: 78px
 }
 
 .teamVSteam {
@@ -22098,7 +22118,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .banner-content-area {
-        padding: 10px 0 30px 0
+        padding: 0px 0 30px 0;
     }
 
     .customSportsTab li {
