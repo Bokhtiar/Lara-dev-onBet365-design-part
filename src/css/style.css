@@ -4,13 +4,7 @@
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-@font-face {
-    font-family: FontAwesome;
-    src: url(../fonts/fontawesome-webfont3e6e.eot?v=4.7.0);
-    src: url(../fonts/fontawesome-webfontd41d.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont3e6e.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont3e6e.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont3e6e.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont3e6e.svg?v=4.7.0#fontawesomeregular) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
+ @import url('https://fonts.googleapis.com/css2?family=Asap&family=Quicksand:wght@400;500;600&family=Roboto:ital,wght@0,100;1,500&display=swap');
 .bg-color{
     background-color: #31002f;
 }
@@ -3066,20 +3060,8 @@
     clip: auto
 }
 
-@font-face {
-    font-family: Flaticon;
-    src: url(../fonts/Flaticon.eot);
-    src: url(../fonts/Flaticond41d.eot?#iefix) format("embedded-opentype"), url(../fonts/Flaticon.woff2) format("woff2"), url(../fonts/Flaticon.woff) format("woff"), url(../fonts/Flaticon.ttf) format("truetype"), url(../fonts/Flaticon.svg#Flaticon) format("svg");
-    font-weight: 400;
-    font-style: normal
-}
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: Flaticon;
-        src: url(../fonts/Flaticon.svg#Flaticon) format("svg")
-    }
-}
+
 
 [class*=" flaticon-"]:after,
 [class*=" flaticon-"]:before,
@@ -13411,7 +13393,7 @@ button.bg-secondary:hover {
 }
 
 .bg-success {
-    background-color: #28a745 !important
+    background-color: #31002f !important
 }
 
 a.bg-success:focus,
@@ -17168,14 +17150,6 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child 
     display: none
 }
 
-@font-face {
-    font-family: lightcase;
-    src: url(../fonts/lightcaseeead.eot?55356177);
-    src: url(../fonts/lightcaseeead.eot?55356177#iefix) format("embedded-opentype"), url(../fonts/lightcaseeead.woff?55356177) format("woff"), url(../fonts/lightcaseeead.ttf?55356177) format("truetype"), url(../fonts/lightcaseeead.svg?55356177#lightcase) format("svg");
-    font-weight: 400;
-    font-style: normal
-}
-
 [class*=lightcase-icon-]:before {
     font-family: lightcase, sans-serif;
     font-style: normal;
@@ -17713,21 +17687,13 @@ a[class*=lightcase-icon-].lightcase-icon-play {
     }
 }
 
-@font-face {
-    font-family: LouisGeorgeCafe;
-    src: url(../fonts/LouisGeorgeCafe.ttf)
-}
 
-@font-face {
-    font-family: LouisGeorgeCafeBold;
-    src: url(../fonts/LouisGeorgeCafeBold.ttf)
-}
 
 :root {
     --main-color: #ff3952;
     --second-color: #63035f;
-    --heading-font: 'LouisGeorgeCafeBold';
-    --heading-font2: 'LouisGeorgeCafe';
+    --heading-font: 'Roboto', 'sans-serif';
+    --heading-font2: 'Roboto', 'sans-serif';
     --heading-color: #000040;
     --para-font: 'Open Sans', sans-serif;
     --para-color: rgba(10, 10, 10, 0.8)
@@ -18357,11 +18323,7 @@ table {
     }
 }
 
-@font-face {
-    font-family: icon-font;
-    src: url(../fonts/icon-font.eot);
-    src: url(../fonts/icon-font.eot?#iefix) format('eot'), url(../fonts/icon-font.woff) format('woff'), url(../fonts/icon-font.ttf) format('truetype'), url(../fonts/icon-font.svg#icon-font) format('svg')
-}
+
 
 .icon-desktop:before,
 .icon-menu-close:before,
@@ -20706,7 +20668,7 @@ span.is-active:after {
 }
 
 .login-block {
-    background-color: var(--second-color);
+    background-color: #450042;
     padding: 60px 0
 }
 
@@ -20935,7 +20897,7 @@ span.is-active:after {
 .footer-top {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: var(--second-color);
+    background-color: #1e021d;
 }
 
 .widget-about .address-list {
@@ -21043,7 +21005,7 @@ span.is-active:after {
 }
 
 .footer-bottom {
-    background-color: var(--second-color);
+    background-color: #2e082d;
     padding: 20px 0;
 }
 
@@ -21052,7 +21014,7 @@ span.is-active:after {
 }
 
 .footer-bottom p a {
-    color: var(--main-color)
+    color: #da0f24
 }
 
 .sports_single_category {
@@ -21153,10 +21115,10 @@ span.is-active:after {
 
 .custom-slider-content {
     position: absolute;
-    width: 550px;
-    left: 250px;
+    width: 541px;
+    left: 157px;
     text-align: left;
-    top: 100px
+    top: 82px;
 }
 
 .custom-slider-content h2 {
@@ -21171,7 +21133,8 @@ span.is-active:after {
     font-weight: 100;
     text-transform: capitalize;
     line-height: 25px;
-    margin: 10px 0
+    margin: 10px 0;
+    border-radius: 5px;
 }
 
 .SlideCustomBullot li {
@@ -21187,20 +21150,22 @@ span.is-active:after {
 .frontendCustomLogin input {
     width: 140px;
     font-size: 13px;
-    border: none;
+    border-radius: 5px;
     height: 30px;
     padding-left: 10px
 }
 
 .frontendCustomLogin input[type=submit] {
-    width: 50px;
+    width: 61px;
     text-align: center;
-    background: green;
-    color: #fff;
+    background: #ffc107;
+    color: #000;
     cursor: pointer;
     padding-left: 5px;
     font-weight: bolder;
-    border-radius: 3px
+    border-radius: 3px;
+    border: none;
+    height: 27px;
 }
 
 .customErrorFix small {
@@ -21346,7 +21311,6 @@ span.is-active:after {
 }
 
 .sidebar-frontend {
-    border: 1px solid #000040;
     background: #450042;
     margin-top: 147px
 }
