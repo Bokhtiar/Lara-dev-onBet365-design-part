@@ -14,12 +14,29 @@
 .bg-color{
     background-color: #31002f;
 }
+.table-row-color{
+    background-color: red;
+}
 #userRegistration{
     background-color: yellow;
 }
 .nav-submenu>ul>li{
     background-color: #31002f;
+    width: 220px;
+    border: none;
 }
+
+.nav-submenu>ul>li:hover{
+    background-color: var(--second-color);
+    width: 220px;
+    border: none;
+    color: white;
+}
+
+.nav-submenu>ul>li>a{
+    color: white;
+}
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -5260,8 +5277,14 @@
 }
 
 .card-body-bg{
-    background-color: #450042;
+    background-color: #31002f;
 }
+
+.card-body-bg>span{
+    font-size: 17px;
+
+}
+
 .button-hover-bg:hover{
     background-color: var(--second-color);
     color:white;
@@ -8780,7 +8803,7 @@ pre code {
 
 .table-dark {
     color: #fff;
-    background-color: #212529
+    background-color: #450042
 }
 
 .table-dark td,
@@ -8877,7 +8900,7 @@ pre code {
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
-    background-color: #31002f;
+    background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -20684,7 +20707,11 @@ span.is-active:after {
 
 .login-block {
     background-color: var(--second-color);
-    box-shadow: 0 0 15px -1px rgba(55, 107, 255, .2);
+    padding: 60px 0
+}
+
+.table-block {
+    background-color: #450042;
     padding: 60px 0
 }
 
@@ -20724,9 +20751,7 @@ span.is-active:after {
     margin-bottom: 45px
 }
 
-input{
-    background-color: black;
-}
+
 .error-section {
     padding-top: 90px;
     padding-bottom: 120px
@@ -21322,7 +21347,7 @@ input{
 
 .sidebar-frontend {
     border: 1px solid #000040;
-    background: var(--second-color);
+    background: #450042;
     margin-top: 147px
 }
 
