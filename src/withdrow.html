@@ -113,79 +113,60 @@
         </div><!-- header-bottom end -->
     </header>
     <!--  header-section end  -->
-
+    <!-- Main Content -->
     <!-- breadcrumb Start -->
     <section class="breadcrumbs-custom-wrap">
         <h1 class="text-center">
             <ul class="breadcroumbLink">
                 <li><a href="https://onbet365.in">Home</a></li>
-                <li><a>/ make deposit</a></li>
+                <li><a>/ withdraw</a></li>
             </ul>
         </h1>
     </section>
-
     <section class="login-section bg-color" style="padding:20px 0px">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="login-block text-center">
                         <div style="padding:0px 20px;">
-                            <h3 class="title">Make Deposit</h3>
+                            <h3 class="title"> Withdraw </h3>
                             <div class="customProfile">
-
-                                <p class="depositMsgSize text-info mt-2 mb-3">User deposit Time at 9:00 AM To 10:00 pm
-                                </p>
-
-
                                 <div class="row">
                                     <div class="col-md-6 offset-md-3 col-sm-12">
-                                        <form action="https://onbet365.in/user/online/deposit" method="POST">
+                                        <form action="https://onbet365.in/user/withdraw/store" method="POST">
                                             <input type="hidden" name="_token"
                                                 value="w50CTFNTlQCOlhBSDHUTbfUA6wdV2JQQ3WqJ1S9r">
                                             <div class="form-group">
-                                                <label for="paymentMethod"
+                                                <label for="withdrawAmount"
+                                                    style="display: block;text-align: left;">Withdraw Amount (400 -
+                                                    25000) <span class="text-danger">*</span></label>
+                                                <input required id="withdrawAmount" class="form-control" type="number"
+                                                    name="withdrawAmount" placeholder="(400 - 25000)" />
+                                                <p class="text-danger text-left"> </p>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="withdrawNumber"
+                                                    style="display: block;text-align: left;">Phone Number <span
+                                                        class="text-danger">*</span></label>
+                                                <input required id="withdrawNumber" class="form-control" type="number"
+                                                    name="withdrawNumber" placeholder="018XXXXXXXX" />
+                                                <p class="text-danger text-left"> </p>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="withdrawPaymentType"
                                                     style="display: block;text-align: left;">Payment Method<span
                                                         class="text-danger">*</span></label>
-                                                <select required id="paymentMethod" name="paymentMethodType"
+                                                <select required id="withdrawPaymentType" name="withdrawPaymentType"
                                                     class="form-control">
-                                                    <option value="0"> Select method </option>
-                                                    <option value="2">Nagad</option>
-                                                    <option value="1">Bkash</option>
-                                                    <!-- <option  value="skrill" disabled>Skrill</option>
-                                                <option  value="paypal" disabled>Paypal</option>
-                                                <option  value="stripe" disabled>Stripe</option>
-                                                <option  value="neteller" disabled>Neteller</option> -->
+                                                    <option value="">Select Payment Method</option>
+                                                    <option value="bkash agent">Bkash Agent</option>
+                                                    <option value="bkash personal">Bkash Personal</option>
+                                                    <!--<option value="Nagad agent">Nagad Agent</option>
+                                                    <option value="Nagad personal">Nagad Personal</option>-->
                                                 </select>
                                                 <p class="text-danger text-left"> </p>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="depositAmount"
-                                                    style="display: block;text-align: left;">Number of Coins (200-25500)
-                                                    <span class="text-danger">*</span></label>
-                                                <input required id="depositAmount" class="form-control" type="number"
-                                                    min="0" name="depositAmount" placeholder="(200-25500)" value="" />
-                                                <p class="text-danger text-left"> </p>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="phoneForm" style="display: block;text-align: left;">Phone
-                                                    From <span class="text-danger">*</span></label>
-                                                <input required id="phoneForm" class="form-control" type="number"
-                                                    min="0" name="phoneForm" placeholder="Phone Form" value="" />
-                                                <p class="text-danger text-left"> </p>
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="phoneTo" id="phoneToLabel"
-                                                    style="display: block;text-align: left;">Phone To <span
-                                                        class="text-danger"> * </span> </label>
-                                                <input required id="phoneTo" class="form-control" type="text"
-                                                    name="phoneTo" readonly value="" />
-                                                <p class="text-danger text-left"> </p>
-                                            </div>
-                                            <div class="depositNumberShowMsg" style="display: block;text-align: left;">
-                                                <b class="text-danger">Please select payment method for deposit</b>
                                             </div>
 
                                             <div class="form-group">
@@ -199,7 +180,7 @@
 
                                             <div class="form-group">
                                                 <input id="submit" type="submit" class="btn btn-info"
-                                                    value="Request For Deposit" />
+                                                    value="Request Withdraw" />
                                             </div>
 
                                         </form>
@@ -212,11 +193,8 @@
             </div>
         </div>
     </section>
-
-    <!-- Main Content -->
     <!-- Main Content -->
 
-    <!--main section profile end-->
 
     <!-- footer-section start -->
     <footer class="footer-section">
@@ -318,7 +296,8 @@
     <script src="./js/app.js"></script>
     <script src="./js/frontcheck.js"></script>
 
-    <!-- Script -->
+
+
 </body>
 
 </html>
